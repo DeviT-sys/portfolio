@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devi Thangavel Data Analyst Portfolio</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#14213d;--mute:#5b6477;--line:#e2e6ee;--acc:#0f6cbd;--acc2:#12a594;--chip:#e8f1fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1420;--card:#172033;--ink:#eaf0fa;--mute:#9aa7bd;--line:#273148;--acc:#5cb0ff;--acc2:#3dd6c3;--chip:#1d2b44}}
+:root[data-theme="dark"]{--bg:#0e1420;--card:#172033;--ink:#eaf0fa;--mute:#9aa7bd;--line:#273148;--acc:#5cb0ff;--acc2:#3dd6c3;--chip:#1d2b44}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:16px 0;font-size:14px}
+nav a{color:var(--mute)}
+header.hero{padding:40px 0 28px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 8px}
+.role{font-size:clamp(18px,3vw,22px);color:var(--acc);font-weight:600;margin:0 0 16px}
+.lead{max-width:720px;color:var(--mute);font-size:17px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{padding:10px 18px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-weight:600;font-size:14px}
+.btn.p{background:var(--acc);color:#fff;border-color:var(--acc)}
+section{padding:34px 0}
+h2{font-size:26px;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 20px}
+.grid{display:grid;gap:14px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p,.card li{color:var(--mute);font-size:15px;margin:4px 0}
+.card ul{padding-left:18px;margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{background:var(--chip);color:var(--acc);border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:600}
+.feat{border:2px solid var(--acc)}
+.tag{display:inline-block;background:var(--acc2);color:#04231f;border-radius:6px;padding:2px 8px;font-size:12px;font-weight:700;margin-bottom:8px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:14px 0}
+.node{flex:1 1 120px;background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;font-size:13px}
+.node b{display:block;color:var(--ink);font-size:14px}
+.node span{color:var(--mute)}
+.arrow{align-self:center;color:var(--mute)}
+.scroll{overflow-x:auto}
+.dash{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.dash h4{margin:0 0 10px;font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:var(--chip);border-radius:10px;padding:10px}
+.kpi small{color:var(--mute);display:block;font-size:12px}
+.kpi b{font-size:20px}
+.bar{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--mute);margin:5px 0}
+.bar i{display:block;height:12px;border-radius:4px;background:var(--acc)}
+.bar em{font-style:normal;min-width:72px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:600}
+code{background:var(--chip);padding:1px 6px;border-radius:5px;font-size:13px}
+pre{background:var(--chip);padding:12px;border-radius:10px;overflow-x:auto;font-size:13px;margin:8px 0}
+.note{font-size:13px;color:var(--mute);font-style:italic;margin-top:8px}
+.job{padding:14px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border:0}
+.job h3{margin:0;font-size:17px}
+.job .meta{color:var(--mute);font-size:14px}
+footer{padding:30px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#about">About</a><a href="#project">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#creds">Certifications</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<h1>Devi Thangavel<br>Data Analyst Portfolio</h1>
+<p class="role">SQL · BigQuery · Power BI · Tableau · Looker Studio · Python · R · Azure · ETL</p>
+<p class="lead">I turn large, messy datasets into clear dashboards and decisions. My background spans SQL and BigQuery analytics, ETL pipeline improvements, GIS datasets, data quality, and software testing, backed by a habit of working closely with stakeholders so the technical work serves the business goal.</p>
+<div class="btns">
+<a class="btn p" href="#project">View featured project</a>
+<a class="btn" href="https://github.com/DeviT-sys">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/devi-thangavel-821808112">LinkedIn</a>
+<a class="btn" href="mailto:devi.t04@gmail.com">Email me</a>
+</div>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<p class="sub">Greater Seattle Area</p>
+<div class="grid g3">
+<div class="card"><h3>Analytics &amp; Reporting</h3><p>Statistical analysis, trend and anomaly detection, and executive reporting through WSR, MBR and QBR cycles.</p></div>
+<div class="card"><h3>Pipelines &amp; Data Quality</h3><p>ETL improvements, data mapping, validation, and remediation of data ingestion failures across large-scale datasets.</p></div>
+<div class="card"><h3>Dashboards</h3><p>Looker Studio, Power BI and Tableau dashboards that cut manual reporting and give leaders fast visibility.</p></div>
+<div class="card"><h3>AI Data Collection Coordination</h3><p>Managed participant recruitment, scheduling and onboarding for AI research data collection, while validating dataset quality and keeping programs on target with PMs and QA teams.</p></div>
+</div>
+<div class="grid g3" style="margin-top:14px">
+<div class="card"><h3>50%</h3><p>Reduction in manual reporting effort after building scalable Looker Studio dashboards.</p></div>
+<div class="card"><h3>30%</h3><p>Productivity gain for GIS operators using containment and geo-relation dashboards.</p></div>
+<div class="card"><h3>100%</h3><p>SLA compliance across bugs, pipelines, logs, dashboards and schedule tracking.</p></div>
+</div>
+</section>
+
+<section id="project">
+<span class="tag">FEATURED PROJECT</span>
+<h2>Automated Retail Sales Analytics Using Azure and Power BI</h2>
+<p class="sub">An end-to-end, fully automated analytics solution: from raw point-of-sale files to refreshed Power BI dashboards, with no manual steps in between.</p>
+
+<div class="card feat">
+<h3>The problem</h3>
+<p>Retail sales data arrives daily as flat files from stores and an e-commerce platform. Reporting was manual: copy, clean, merge in Excel, then email. The result was stale numbers, inconsistent definitions and hours of analyst time per cycle.</p>
+<h3 style="margin-top:12px">The solution</h3>
+<p>An automated pipeline on Azure that ingests, cleans, models and publishes sales data on a schedule, feeding a governed Power BI semantic model and a set of decision-ready dashboards.</p>
+<div class="chips"><span class="chip">Azure Data Factory</span><span class="chip">ADLS Gen2</span><span class="chip">Azure Databricks / PySpark</span><span class="chip">Azure SQL Database</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Azure DevOps</span><span class="chip">Key Vault</span></div>
+</div>
+
+<h3 style="margin:24px 0 4px">End-to-end architecture</h3>
+<div class="scroll"><div class="flow" style="min-width:640px">
+<div class="node"><b>Sources</b><span>Store POS CSVs, e-commerce orders, product &amp; store master data</span></div><div class="arrow">→</div>
+<div class="node"><b>Ingest</b><span>Azure Data Factory, scheduled and event triggers</span></div><div class="arrow">→</div>
+<div class="node"><b>Bronze</b><span>ADLS Gen2 raw landing zone</span></div><div class="arrow">→</div>
+<div class="node"><b>Silver</b><span>Databricks: clean, dedupe, validate</span></div><div class="arrow">→</div>
+<div class="node"><b>Gold</b><span>Azure SQL star schema</span></div><div class="arrow">→</div>
+<div class="node"><b>Serve</b><span>Power BI dataset, scheduled refresh</span></div>
+</div></div>
+
+<div class="grid g2" style="margin-top:14px">
+<div class="card"><h3>1 · Ingestion</h3>
+<ul><li>ADF pipelines copy daily files into the raw container, partitioned by date.</li><li>Parameterized datasets so new stores or sources need configuration, not new code.</li><li>Secrets held in Key Vault; failures trigger alerts.</li></ul></div>
+<div class="card"><h3>2 · Transformation</h3>
+<ul><li>PySpark notebooks standardize schemas, fix data types, remove duplicates and handle nulls.</li><li>Rule-based validation: negative quantities, missing keys, orphan product IDs.</li><li>Rejected rows are quarantined with a reason code for review.</li></ul></div>
+<div class="card"><h3>3 · Modeling</h3>
+<ul><li>Star schema: <code>FactSales</code> with <code>DimDate</code>, <code>DimProduct</code>, <code>DimStore</code>, <code>DimCustomer</code>.</li><li>Incremental loads using a watermark column and upsert logic.</li><li>Indexed for report query performance.</li></ul></div>
+<div class="card"><h3>4 · Automation &amp; Governance</h3>
+<ul><li>ADF trigger runs the full chain nightly, then refreshes the Power BI dataset.</li><li>Pipeline code under Git with Azure DevOps CI/CD across dev and prod.</li><li>Row-level security by region in Power BI.</li></ul></div>
+</div>
+
+<h3 style="margin:26px 0 4px">Power BI dashboards</h3>
+<p class="note" style="margin-top:0;margin-bottom:12px">Illustrative layouts built with sample figures to show report design. Replace with screenshots from your published report.</p>
+
+<div class="grid g2">
+<div class="dash"><h4>Page 1 · Executive Sales Overview</h4>
+<div class="kpis"><div class="kpi"><small>Total Revenue</small><b>$4.82M</b></div><div class="kpi"><small>Gross Margin</small><b>31.4%</b></div><div class="kpi"><small>Orders</small><b>58.2K</b></div><div class="kpi"><small>Avg Basket</small><b>$82.8</b></div></div>
+<svg viewBox="0 0 400 120" width="100%" role="img" aria-label="Monthly revenue trend line, sample data"><polyline fill="none" stroke="var(--acc)" stroke-width="3" points="10,95 45,85 80,88 115,70 150,74 185,55 220,60 255,42 290,48 325,30 360,34 390,18"/><line x1="10" y1="110" x2="390" y2="110" stroke="var(--line)"/></svg>
+<p class="note">Monthly revenue trend with YoY comparison, KPI cards and slicers for date, region and category.</p></div>
+
+<div class="dash"><h4>Page 2 · Product &amp; Category Performance</h4>
+<div class="bar"><em>Apparel</em><i style="width:78%"></i></div>
+<div class="bar"><em>Electronics</em><i style="width:64%"></i></div>
+<div class="bar"><em>Home &amp; Kitchen</em><i style="width:52%"></i></div>
+<div class="bar"><em>Beauty</em><i style="width:38%"></i></div>
+<div class="bar"><em>Grocery</em><i style="width:29%"></i></div>
+<p class="note">Revenue and margin by category, top and bottom 10 products, and a drill-through to SKU detail.</p></div>
+
+<div class="dash"><h4>Page 3 · Store &amp; Regional Insights</h4>
+<div class="bar"><em>West</em><i style="width:72%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Northeast</em><i style="width:61%;background:var(--acc2)"></i></div>
+<div class="bar"><em>South</em><i style="width:55%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Midwest</em><i style="width:43%;background:var(--acc2)"></i></div>
+<p class="note">Sales by region and store, target vs actual, and a map visual for geographic patterns.</p></div>
+
+<div class="dash"><h4>Page 4 · Customer &amp; Pipeline Health</h4>
+<div class="kpis"><div class="kpi"><small>Repeat Rate</small><b>38%</b></div><div class="kpi"><small>Last Refresh</small><b>02:15 AM</b></div><div class="kpi"><small>Rows Rejected</small><b>0.4%</b></div></div>
+<p class="note">Customer segments and repeat purchase behavior, plus a data-quality panel so users can trust the numbers.</p></div>
+</div>
+
+<div class="grid g2" style="margin-top:18px">
+<div class="card"><h3>Sample DAX measures</h3>
+<pre>Total Revenue = SUM ( FactSales[NetAmount] )
+
+Gross Margin % =
+DIVIDE ( [Total Revenue] - SUM ( FactSales[Cost] ), [Total Revenue] )
+
+Revenue YoY % =
+VAR Prev = CALCULATE ( [Total Revenue], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+RETURN DIVIDE ( [Total Revenue] - Prev, Prev )</pre></div>
+<div class="card"><h3>Business value</h3>
+<ul><li>Replaces manual spreadsheet reporting with a nightly automated refresh.</li><li>One governed definition of revenue, margin and orders across every report.</li><li>Faster answers on top products, weak stores and regional trends.</li><li>Built-in data-quality checks make issues visible before leaders see them.</li></ul></div>
+</div>
+<div class="card" style="margin-top:14px"><h3>Tools &amp; skills demonstrated</h3>
+<p>Cloud ETL orchestration, medallion data architecture, dimensional modeling, incremental loading, PySpark data cleaning, DAX, row-level security, CI/CD with Azure DevOps, and stakeholder-focused dashboard design.</p></div>
+</section>
+
+<section id="project2">
+<span class="tag">PROJECT 2</span>
+<h2>Recruitment Funnel &amp; Participant Analytics in Tableau</h2>
+<p class="sub">Interactive Tableau dashboards that track a data-collection recruitment pipeline from sourcing to completed sessions, so teams can see where participants drop off and act on it.</p>
+
+<div class="card feat">
+<h3>The problem</h3>
+<p>Participant status lived in several trackers and spreadsheets. Funnel numbers were compiled by hand, which made it slow to spot sign-up shortfalls, no-shows and gaps against weekly targets.</p>
+<h3 style="margin-top:12px">The solution</h3>
+<p>A cleaned, combined dataset feeding a Tableau workbook with a funnel view, target tracking, source-channel comparison and a data-quality check, all filterable by project, week and demographic segment.</p>
+<div class="chips"><span class="chip">Tableau</span><span class="chip">Calculated Fields</span><span class="chip">LOD Expressions</span><span class="chip">Parameters</span><span class="chip">Dashboard Actions</span><span class="chip">SQL</span><span class="chip">Excel</span><span class="chip">Data Validation</span></div>
+</div>
+
+<div class="grid g2" style="margin-top:14px">
+<div class="card"><h3>1 · Data preparation</h3><ul><li>Consolidated participant, session and source data; standardized statuses and dates.</li><li>Validated duplicates, missing IDs and inconsistent demographic values before loading.</li><li>Modeled as one participant-level table joined to a project and target table.</li></ul></div>
+<div class="card"><h3>2 · Calculated fields</h3><ul><li>Stage conversion and drop-off rates between funnel steps.</li><li>Show-up rate and target attainment using LOD expressions.</li><li>A parameter to switch weekly, monthly and project-level views.</li></ul></div>
+</div>
+
+<h3 style="margin:22px 0 4px">Tableau dashboards</h3>
+<p class="note" style="margin-top:0;margin-bottom:12px">Illustrative layouts with sample figures. Replace with screenshots or a Tableau Public link from your actual workbook.</p>
+<div class="grid g2">
+<div class="dash"><h4>Dashboard 1 · Recruitment Funnel</h4>
+<div class="kpis"><div class="kpi"><small>Sourced</small><b>1,240</b></div><div class="kpi"><small>Completed</small><b>412</b></div><div class="kpi"><small>Show-up Rate</small><b>86%</b></div></div>
+<div class="bar"><em>Sourced</em><i style="width:100%"></i></div>
+<div class="bar"><em>Registered</em><i style="width:68%"></i></div>
+<div class="bar"><em>Scheduled</em><i style="width:49%"></i></div>
+<div class="bar"><em>Completed</em><i style="width:33%"></i></div>
+<p class="note">Funnel with conversion at each stage; clicking a stage filters every other view.</p></div>
+
+<div class="dash"><h4>Dashboard 2 · Target vs Actual</h4>
+<svg viewBox="0 0 400 120" width="100%" role="img" aria-label="Weekly actual versus target, sample data"><polyline fill="none" stroke="var(--acc2)" stroke-width="3" points="10,80 65,70 120,76 175,55 230,60 285,40 340,45 390,30"/><polyline fill="none" stroke="var(--mute)" stroke-width="2" stroke-dasharray="6 5" points="10,60 390,60"/><line x1="10" y1="110" x2="390" y2="110" stroke="var(--line)"/></svg>
+<p class="note">Weekly sign-ups and completions against target, with gap highlighting by project.</p></div>
+
+<div class="dash"><h4>Dashboard 3 · Source &amp; Segment Mix</h4>
+<div class="bar"><em>Referral</em><i style="width:70%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Social</em><i style="width:55%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Email</em><i style="width:41%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Community</em><i style="width:27%;background:var(--acc2)"></i></div>
+<p class="note">Which outreach channels produce completed sessions, plus demographic balance against study quotas.</p></div>
+
+<div class="dash"><h4>Dashboard 4 · Data Quality</h4>
+<div class="kpis"><div class="kpi"><small>Duplicates Flagged</small><b>1.2%</b></div><div class="kpi"><small>Missing Fields</small><b>2.8%</b></div></div>
+<p class="note">Records needing follow-up, so issues are fixed at the source before reporting.</p></div>
+</div>
+
+<div class="grid g2" style="margin-top:18px">
+<div class="card"><h3>Sample calculated fields</h3>
+<pre>Show-up Rate =
+SUM([Attended]) / SUM([Scheduled])
+
+Target Attainment =
+SUM([Completed]) /
+MAX({ FIXED [Project] : SUM([Target]) })</pre></div>
+<div class="card"><h3>Business value</h3><ul><li>Replaces manual funnel counting with one interactive view.</li><li>Shows exactly where participants drop off and which channels work.</li><li>Helps teams close pipeline gaps before deadlines are missed.</li></ul></div>
+</div>
+</section>
+
+<section id="project3">
+<span class="tag">PROJECT 3 · GOOGLE DATA ANALYTICS CAPSTONE</span>
+<h2>Fitbit Fitness Tracker Data Analysis in R</h2>
+<p class="sub">A case study for Bellabeat, a wellness technology company: what do smart-device usage patterns reveal about how people stay active, and how can that guide marketing strategy?</p>
+
+<div class="card feat">
+<h3>Business task</h3>
+<p>Analyze public smart-device usage data to uncover trends in activity, sleep and calories, then apply those insights to one Bellabeat product and recommend marketing actions to the executive team.</p>
+<h3 style="margin-top:12px">Data</h3>
+<p>The public FitBit Fitness Tracker dataset (Mobius, via Kaggle): minute, hourly and daily records of steps, intensity, calories, sleep and weight from about 30 consenting users, collected in 2016.</p>
+<div class="chips"><span class="chip">R</span><span class="chip">RStudio</span><span class="chip">tidyverse</span><span class="chip">dplyr</span><span class="chip">ggplot2</span><span class="chip">lubridate</span><span class="chip">janitor</span><span class="chip">skimr</span><span class="chip">R Markdown</span></div>
+</div>
+
+<h3 style="margin:24px 0 4px">Analysis workflow</h3>
+<div class="scroll"><div class="flow" style="min-width:640px">
+<div class="node"><b>Ask</b><span>Define the business task and stakeholders</span></div><div class="arrow">→</div>
+<div class="node"><b>Prepare</b><span>Review sources, credibility and limitations</span></div><div class="arrow">→</div>
+<div class="node"><b>Process</b><span>Clean, standardize and merge in R</span></div><div class="arrow">→</div>
+<div class="node"><b>Analyze</b><span>Summaries, correlations, user segments</span></div><div class="arrow">→</div>
+<div class="node"><b>Share</b><span>ggplot2 visuals and R Markdown report</span></div><div class="arrow">→</div>
+<div class="node"><b>Act</b><span>Marketing recommendations</span></div>
+</div></div>
+
+<div class="grid g2" style="margin-top:14px">
+<div class="card"><h3>Cleaning &amp; preparation</h3><ul><li>Standardized column names and converted date and time formats.</li><li>Removed duplicates and checked missing values and invalid zero-activity days.</li><li>Merged daily activity with sleep records by user ID and date.</li><li>Noted sample limits: small sample, sparse weight logs, a single two-month window.</li></ul></div>
+<div class="card"><h3>Analysis performed</h3><ul><li>Daily steps, distance, calories and sedentary time per user.</li><li>Relationship between steps, activity intensity and calories burned.</li><li>Activity patterns by weekday and hour of day.</li><li>Time in bed versus time asleep, and usage segments (light, moderate, heavy).</li></ul></div>
+</div>
+
+<h3 style="margin:22px 0 4px">Visualizations</h3>
+<p class="note" style="margin-top:0;margin-bottom:12px">Illustrative layouts with sample figures. Replace with ggplot2 images and your actual findings from the notebook.</p>
+<div class="grid g2">
+<div class="dash"><h4>Steps vs Calories Burned</h4>
+<svg viewBox="0 0 400 140" width="100%" role="img" aria-label="Scatter of steps versus calories showing a positive trend, sample data"><g fill="var(--acc)" opacity=".85"><circle cx="40" cy="110" r="4"/><circle cx="70" cy="100" r="4"/><circle cx="95" cy="104" r="4"/><circle cx="120" cy="88" r="4"/><circle cx="150" cy="92" r="4"/><circle cx="180" cy="74" r="4"/><circle cx="215" cy="70" r="4"/><circle cx="245" cy="56" r="4"/><circle cx="275" cy="60" r="4"/><circle cx="310" cy="42" r="4"/><circle cx="345" cy="34" r="4"/></g><line x1="30" y1="114" x2="365" y2="28" stroke="var(--acc2)" stroke-width="2.5"/><line x1="20" y1="128" x2="380" y2="128" stroke="var(--line)"/></svg>
+<p class="note">Positive relationship: more steps generally means more calories burned.</p></div>
+
+<div class="dash"><h4>Average Steps by Weekday</h4>
+<div class="bar"><em>Mon</em><i style="width:70%"></i></div>
+<div class="bar"><em>Tue</em><i style="width:82%"></i></div>
+<div class="bar"><em>Wed</em><i style="width:74%"></i></div>
+<div class="bar"><em>Thu</em><i style="width:68%"></i></div>
+<div class="bar"><em>Fri</em><i style="width:64%"></i></div>
+<div class="bar"><em>Sat</em><i style="width:88%"></i></div>
+<div class="bar"><em>Sun</em><i style="width:58%"></i></div>
+<p class="note">Identifies the days people are most and least active.</p></div>
+
+<div class="dash"><h4>Where the Day Goes</h4>
+<div class="bar"><em>Sedentary</em><i style="width:80%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Lightly active</em><i style="width:15%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Fairly active</em><i style="width:3%;background:var(--acc2)"></i></div>
+<div class="bar"><em>Very active</em><i style="width:2%;background:var(--acc2)"></i></div>
+<p class="note">Most waking time is sedentary, which is the opportunity for reminders and nudges.</p></div>
+
+<div class="dash"><h4>Usage Segments</h4>
+<div class="kpis"><div class="kpi"><small>Light users</small><b>—</b></div><div class="kpi"><small>Moderate</small><b>—</b></div><div class="kpi"><small>Heavy</small><b>—</b></div></div>
+<p class="note">Users grouped by how many days they wore the device. Fill in your own segment counts.</p></div>
+</div>
+
+<div class="grid g2" style="margin-top:18px">
+<div class="card"><h3>Sample R code</h3>
+<pre>library(tidyverse)
+library(lubridate)
+library(janitor)
+
+daily &lt;- read_csv("dailyActivity_merged.csv") %&gt;%
+  clean_names() %&gt;%
+  mutate(activity_date = mdy(activity_date),
+         weekday = wday(activity_date, label = TRUE)) %&gt;%
+  distinct()
+
+ggplot(daily, aes(total_steps, calories)) +
+  geom_point(alpha = .6) +
+  geom_smooth(method = "lm") +
+  labs(title = "Steps vs Calories")</pre></div>
+<div class="card"><h3>Recommendations</h3><ul><li>Position the product around everyday movement, not only workouts.</li><li>Use in-app reminders to break up long sedentary stretches.</li><li>Add sleep and activity goal tracking to encourage consistent daily use.</li><li>Keep weight and manual logging optional, since usage was sparse.</li></ul></div>
+</div>
+</section>
+
+<section id="project4">
+<span class="tag">PROJECT 4 · PYTHON · PUBLIC HEALTHCARE DATASETS</span>
+<h2>Healthcare Data Analysis in Python: Heart Disease, Diabetes &amp; Breast Cancer</h2>
+<p class="sub">Data-driven insights from real-world healthcare data, produced through exploratory and statistical analysis with pandas, seaborn and matplotlib on three well-known public datasets.</p>
+
+<div class="card feat">
+<h3>Objective</h3>
+<p>For each dataset, understand its structure and quality, find which patient measurements separate people with and without the condition, and back the patterns with statistical tests so the conclusions rest on evidence.</p>
+<div class="chips"><span class="chip">Python</span><span class="chip">Jupyter</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">seaborn</span><span class="chip">matplotlib</span><span class="chip">SciPy</span><span class="chip">EDA</span><span class="chip">Hypothesis Testing</span></div>
+</div>
+
+<div class="grid g3" style="margin-top:14px">
+<div class="card"><h3>UCI Heart Disease</h3><p>Cleveland data: 303 patients and 14 attributes, including age, sex, chest pain type, resting blood pressure, cholesterol and maximum heart rate.</p>
+<ul><li>Compare distributions for patients with and without heart disease.</li><li>Correlation analysis across clinical measures.</li><li>t-tests for numeric variables, chi-square for categorical ones.</li></ul></div>
+<div class="card"><h3>Pima Indians Diabetes</h3><p>NIDDK data: 768 records with 8 predictors (glucose, BMI, blood pressure, insulin, age and more) and a diabetes outcome.</p>
+<ul><li>Zeros in glucose, blood pressure, BMI and insulin are not physiologically valid, so they were treated as missing values.</li><li>Imputed and compared groups by outcome.</li><li>Feature relationships with the outcome.</li></ul></div>
+<div class="card"><h3>Breast Cancer Wisconsin (Diagnostic)</h3><p>569 samples with 30 numeric features computed from cell nucleus images, labeled benign or malignant.</p>
+<ul><li>Feature distributions by diagnosis.</li><li>Heatmap to find highly correlated features.</li><li>Tests on which measurements differ most between classes.</li></ul></div>
+</div>
+
+<h3 style="margin:24px 0 4px">Analysis workflow</h3>
+<div class="scroll"><div class="flow" style="min-width:640px">
+<div class="node"><b>Load</b><span>Import with pandas, check shape and types</span></div><div class="arrow">→</div>
+<div class="node"><b>Clean</b><span>Missing values, invalid zeros, duplicates, outliers</span></div><div class="arrow">→</div>
+<div class="node"><b>Explore</b><span>Distributions, group comparisons, correlations</span></div><div class="arrow">→</div>
+<div class="node"><b>Test</b><span>Statistical analysis of key relationships</span></div><div class="arrow">→</div>
+<div class="node"><b>Report</b><span>Visual summary and insights</span></div>
+</div></div>
+
+<h3 style="margin:22px 0 4px">Visualizations</h3>
+<p class="note" style="margin-top:0;margin-bottom:12px">The class-balance charts use the datasets’ published counts. The histogram is an illustrative layout; replace it with your own seaborn and matplotlib outputs.</p>
+<div class="grid g2">
+<div class="dash"><h4>Diabetes dataset · outcome balance (768)</h4>
+<div class="bar"><em>No diabetes</em><i style="width:65%"></i><span>500</span></div>
+<div class="bar"><em>Diabetes</em><i style="width:35%;background:var(--acc2)"></i><span>268</span></div>
+<p class="note">Roughly two thirds of records are non-diabetic, which matters when interpreting any comparison.</p></div>
+
+<div class="dash"><h4>Breast cancer dataset · diagnosis balance (569)</h4>
+<div class="bar"><em>Benign</em><i style="width:63%"></i><span>357</span></div>
+<div class="bar"><em>Malignant</em><i style="width:37%;background:var(--acc2)"></i><span>212</span></div>
+<p class="note">Checking class balance first shows whether simple averages or rates can mislead.</p></div>
+
+<div class="dash"><h4>Distribution of a Key Variable (illustrative)</h4>
+<svg viewBox="0 0 400 130" width="100%" role="img" aria-label="Illustrative histogram"><g fill="var(--acc)"><rect x="20" y="95" width="30" height="25"/><rect x="55" y="75" width="30" height="45"/><rect x="90" y="45" width="30" height="75"/><rect x="125" y="20" width="30" height="100"/><rect x="160" y="35" width="30" height="85"/><rect x="195" y="60" width="30" height="60"/><rect x="230" y="82" width="30" height="38"/><rect x="265" y="100" width="30" height="20"/><rect x="300" y="110" width="30" height="10"/></g><line x1="15" y1="121" x2="340" y2="121" stroke="var(--line)"/></svg>
+<p class="note">Histogram showing spread, skew and outliers before testing.</p></div>
+</div>
+
+<div class="grid g2" style="margin-top:18px">
+<div class="card"><h3>Sample Python code</h3>
+<pre>import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
+
+df = pd.read_csv("diabetes.csv")
+
+# zeros are invalid for these columns
+cols = ["Glucose", "BloodPressure", "BMI", "Insulin"]
+df[cols] = df[cols].replace(0, np.nan)
+df[cols] = df[cols].fillna(df[cols].median())
+
+sns.boxplot(data=df, x="Outcome", y="Glucose")
+plt.show()
+
+a = df.loc[df.Outcome == 1, "Glucose"]
+b = df.loc[df.Outcome == 0, "Glucose"]
+print(stats.ttest_ind(a, b, equal_var=False))</pre></div>
+<div class="card"><h3>Outcome</h3><ul><li>Turned raw clinical datasets into clear, evidence-backed insights.</li><li>Caught data quality problems, such as invalid zero values, before analysis.</li><li>Presented results visually so non-technical audiences could follow them.</li></ul>
+<p class="note">Add your own key findings and links to your notebooks here.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills &amp; Technologies</h2>
+<p class="sub">Tools I use to deliver insight, reporting and reliable data.</p>
+<div class="grid g2">
+<div class="card"><h3>Data &amp; BI</h3><div class="chips"><span class="chip">SQL (T-SQL, GoogleSQL)</span><span class="chip">BigQuery</span><span class="chip">Power BI</span><span class="chip">Looker Studio</span><span class="chip">Tableau</span><span class="chip">Excel</span><span class="chip">Google Sheets</span></div></div>
+<div class="card"><h3>Cloud &amp; Engineering</h3><div class="chips"><span class="chip">Google Cloud Platform</span><span class="chip">Azure DevOps</span><span class="chip">ETL</span><span class="chip">Data Warehouse</span><span class="chip">Git / GitHub</span></div></div>
+<div class="card"><h3>Programming</h3><div class="chips"><span class="chip">R (tidyverse)</span><span class="chip">RStudio</span><span class="chip">Python (Jupyter)</span><span class="chip">pandas</span><span class="chip">seaborn</span><span class="chip">matplotlib</span><span class="chip">HTML</span><span class="chip">JavaScript</span><span class="chip">XML</span><span class="chip">Google Apps Script</span></div></div>
+<div class="card"><h3>Quality &amp; Delivery</h3><div class="chips"><span class="chip">Selenium</span><span class="chip">MS Test</span><span class="chip">Jira</span><span class="chip">Agile</span><span class="chip">Data validation</span><span class="chip">Technical documentation</span></div></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<div class="job"><h3>Recruitment Coordinator · AI Data Collection</h3><div class="meta">Pro Integrate – Centific · Redmond, WA · Apr 2026 – Oct 2026</div>
+<ul><li>Ran the end-to-end recruitment pipeline for data collection programs, tracking funnel metrics from sourcing to registration to completion.</li><li>Coordinated participant scheduling and onboarding while ensuring compliance with study protocols, consent forms and NDAs.</li><li>Identified inefficiencies in data collection workflows and implemented process improvements to improve accuracy and reduce turnaround time.</li><li>Validated AI research datasets and maintained structured demographic and session data.</li><li>Tracked tasks and issues in Jira and aligned participant supply with PMs and QA teams.</li></ul></div>
+<div class="job"><h3>Data Moderator</h3><div class="meta">Pro Integrate – Meta (Vendor) · Redmond, WA · Sep 2025 – Nov 2025</div>
+<ul><li>Coordinated study participants, prepared lab environments, and maintained session datasets.</li><li>Reported findings and session summaries to the Team Lead for QA review.</li></ul></div>
+<div class="job"><h3>Data Analyst</h3><div class="meta">Cognizant – Google LLC (Vendor) · Bothell, WA · Dec 2021 – Jul 2023</div>
+<ul><li>Analyzed geospatial mapping workflows in GCP with BigQuery and GoogleSQL across large-scale datasets.</li><li>Built Looker Studio dashboards that cut manual reporting by 50%.</li><li>Deployed containment and geo-relation dashboards that raised GIS operator productivity by 30%.</li><li>Led remediation of geo data injection failures and improved ETL reliability.</li><li>Presented program updates through WSR, MBR and QBR reporting.</li></ul></div>
+<div class="job"><h3>Software Development Engineer in Test</h3><div class="meta">Omni212 LLC · Redmond, WA · Oct 2015 – May 2016</div>
+<ul><li>Owned quality strategy for a B2B marketing CRM, wrote test plans, and built Selenium automation.</li><li>Validated front-end to database consistency with T-SQL integration tests.</li></ul></div>
+<div class="job"><h3>Software Test Engineer</h3><div class="meta">Classic Polo &amp; Drivenwide · India · Jul 2005 – Jun 2007</div>
+<ul><li>Designed and executed functional, integration and usability tests; used SQL to verify data consistency.</li></ul></div>
+</div>
+</section>
+
+<section id="creds">
+<h2>Education &amp; Certifications</h2>
+<div class="grid g2">
+<div class="card"><h3>Education</h3><p>B.S. in Electrical and Electronics Engineering, Periyar University, India</p></div>
+<div class="card"><h3>Certifications</h3><ul><li>Google Data Analytics Professional Certificate</li><li>Google Business Intelligence Certification</li><li>Microsoft Introduction to Generative AI for Data Analysis</li><li>Healthcare Analytics Essentials</li><li>Lean Six Sigma Yellow Belt</li><li>Bellevue College SDET Certification</li></ul></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Let’s connect</h2>
+<p class="sub">Open to data analyst and BI roles.</p>
+<div class="btns" style="margin-top:0">
+<a class="btn p" href="mailto:devi.t04@gmail.com">devi.t04@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/devi-thangavel-821808112">LinkedIn</a>
+<a class="btn" href="https://github.com/DeviT-sys">GitHub</a>
+</div>
+</section>
+<footer>© 2026 Devi Thangavel</footer>
+</div>
+</body>
+</html>
